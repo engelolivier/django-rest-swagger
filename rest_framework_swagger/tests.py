@@ -259,7 +259,7 @@ class UrlParserTest(TestCase):
         apis2 = urlparser.get_filtered_apis(apis, 'api/custom')
         self.assertEqual(apis, apis2)
 
-    def test_flatten_url_tree_excluded_namesapce(self):
+    def test_flatten_url_tree_excluded_namespace(self):
         urls = patterns(
             '',
             url(r'api/base/path/',
